@@ -168,7 +168,7 @@ export default function Home() {
       specialPic = zoo;
       break;
     case "2023":
-      specialPic = mojabirthday_2023_2;
+      specialPic = lemeredian;
       break;
   }
 
@@ -177,7 +177,6 @@ export default function Home() {
       return (
         <>
           <div className="years-column">
-            <Card text="le meridian ka jalsa" src={lemeredian} />
             <Card text="le meridian raat ko kacche mai" src={lemeredian2} />
             <Card text="le meridian se chori krke aate hue" src={lemeredian3} />
             <Card text="le meridian mai harqat kaat'te hue" src={lemeredian4} />
@@ -190,6 +189,7 @@ export default function Home() {
               text="ye mst lacoste wali tshirt bnaya😂. demon slayer wali theme bhi mst hai"
               src={moja_bday_2023}
             />
+            <Card text="le meridian ka jalsa" src={lemeredian} />
           </div>
           <div className="years-column">
             <Card text="random click in CP" src={random_click} />
@@ -603,16 +603,18 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center m-10">
       <div className="text-2xl ">Year {year}</div>
       <div className="lg:w-1/3">
-        <Image
-          src={specialPic}
-          width={0}
-          height={0}
-          sizes="100vw"
-          alt="Picture of the author"
-          style={{ width: "100%", height: "100%" }}
-          // className="rounded-xl"
-          title={`${specialPic}`}
-        />
+        {!["2018", "2021", "2022"].includes(year) && (
+          <Image
+            src={specialPic}
+            width={0}
+            height={0}
+            sizes="100vw"
+            alt="Picture of the author"
+            style={{ width: "100%", height: "100%" }}
+            // className="rounded-xl"
+            title={`${specialPic}`}
+          />
+        )}
       </div>
 
       <section className="years m-10 lg:w-3/5">{getPicsYear()}</section>

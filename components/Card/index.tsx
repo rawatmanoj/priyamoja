@@ -11,7 +11,7 @@ type CardProps = {
 export default function Card({
   src,
   text,
-  textStyle = "flex items-end",
+  textStyle = "flex items-end text-sm",
   containerStyle,
 }: CardProps) {
   const router = useRouter();
