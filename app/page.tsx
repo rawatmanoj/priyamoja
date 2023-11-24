@@ -14,7 +14,7 @@ export default function Home() {
         <div className={`text-4xl ${robotoMono.className}`}>Primojo</div>
       </div>
       <section className="applygrid w-3/5 ">
-        <Card text="2017" src={ground} />
+        <Card textStyle="bottom-2/4 left-2/4" text="2017" src={ground} />
         <Card text="2018" src="https://picsum.photos/600" />
         <Card text="2019" src="https://picsum.photos/600" />
         <Card text="2020" src="https://picsum.photos/600" />

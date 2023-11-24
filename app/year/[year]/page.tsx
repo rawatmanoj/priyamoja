@@ -56,7 +56,7 @@ import before_chennai from "../../../assets/images/2019/before_chennai.jpg";
 import cafe from "../../../assets/images/2019/cafe.jpg";
 import cafe_saket from "../../../assets/images/2019/cafe_saket.jpg";
 import canteen_sleep from "../../../assets/images/2019/canteen_sleep.jpg";
-import farewell from "../../../assets/images/2019/farewell.jpg";
+import farewell from "../../../assets/images/2019/farewell2.jpg";
 import funny_2 from "../../../assets/images/2019/funny_2.jpg";
 import funny_selfie from "../../../assets/images/2019/funny_selfie.jpg";
 import garden5senses from "../../../assets/images/2019/garden5senses.jpg";

@@ -11,7 +11,7 @@ type CardProps = {
 export default function Card({
   src,
   text,
-  textStyle = "bottom-5 left-5",
+  textStyle = "flex items-end",
   containerStyle,
 }: CardProps) {
   const router = useRouter();
@@ -28,7 +28,7 @@ export default function Card({
                 `}
       onClick={handleClick}
     >
-      <p className={`image-text absolute text-white ${textStyle}`}>{text}</p>
+      <p className={`image-text absolute text-white ${textStyle} `}>{text}</p>
       <Image
         src={src}
         width={0}
