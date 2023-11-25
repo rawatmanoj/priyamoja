@@ -142,6 +142,12 @@ import lacoste from "../../../assets/images/2023/Snapchat-653788284.jpg";
 import moja_bday_2023 from "../../../assets/images/2023/moja_bday_2023.jpg";
 import priya_police from "../../../assets/images/2023/priya_gun.jpg";
 import moja_handsup from "../../../assets/images/2023/moja_handsup.jpg";
+import { Roboto_Mono } from "next/font/google";
+
+const robotoMono = Roboto_Mono({
+  weight: "500",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   const pathname = usePathname();
@@ -601,7 +607,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center m-10">
-      <div className="text-2xl ">Year {year}</div>
+      <div className={`text-4xl ${robotoMono.className} heading m-10`}>
+        <h1>Year {year}</h1>
+      </div>
       <div className="lg:w-1/3">
         {!["2018", "2021", "2022"].includes(year) && (
           <Image
