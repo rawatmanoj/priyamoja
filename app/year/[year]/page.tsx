@@ -611,7 +611,7 @@ export default function Home() {
             sizes="100vw"
             alt="Picture of the author"
             style={{ width: "100%", height: "100%" }}
-            // className="rounded-xl"
+            className="rounded-xl"
             title={`${specialPic}`}
           />
         )}
